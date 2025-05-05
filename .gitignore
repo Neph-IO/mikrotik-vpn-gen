@@ -1,0 +1,20 @@
+# Binary & build outputs
+*.exe
+*.out
+*.test
+
+# Runtime
+temp/
+*.zip
+
+# Config & sensitive files
+config.yaml
+
+# Certs & keys
+template/*.crt
+template/*.key
+template/*.pem
+
+# VSCode & OS
+.vscode/
+.DS_Store

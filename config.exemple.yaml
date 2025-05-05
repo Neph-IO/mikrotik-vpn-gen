@@ -1,0 +1,30 @@
+#----- Config Generale -----#
+globalconf:
+  allowedOrigin: http://localhost
+  apiport: "8081"
+
+
+#----- Configuration Mikrotik -----#
+routeros:
+  debug: false
+  address: "10.1.1.1"
+  port: "8728"
+  username: "user"
+  password: "pass"
+  async: false
+  tls: false
+  certname: "mikrotik.crt" # if you use TLS
+
+#----- VPN Generator -----#
+vpncreator:
+  nginxfolder: "/www/web/vpn/" #Where the zipfile will be copied to be downloaded after
+  caname: "dummyCA" #Name of the CA CASE SENSITIVE
+  validtime: "365" #Validity Time
+  keysize: "2048"
+  countrycode: "JP"
+  profilemap:   #Here is mapped the OpenVPN profile name and it's initials or shortname for profile name creation in secrets and cert
+   #profilename : shortname in caps
+    pull-ovpn: "PULL"
+    non-pull-ovpn: "NOPULL"
+
+
