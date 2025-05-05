@@ -55,3 +55,14 @@ Copy this line (247) as many times as needed:
  ```
 <option>OpenVpnProfile1</option>
 ```
+
+## Docker
+
+Comming soon
+
+## Third-party libraries
+
+This project uses:
+
+- [go-routeros/routeros](https://github.com/go-routeros/routeros)  
+  Licensed under the MIT License.
