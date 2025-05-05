@@ -1,0 +1,6 @@
+template/*.crt
+template/*.key
+temp/
+*.zip
+.vscode/
+*.pem

@@ -1,10 +1,10 @@
-#----- Config Generale -----#
+#----- General  -----#
 globalconf:
   allowedOrigin: http://localhost
-  apiport: "8081"
+  apiport: "8081" #LEAVE AS IS IF RUNNED IN DOCKER
 
 
-#----- Configuration Mikrotik -----#
+#----- Mikrotik -----#
 routeros:
   debug: false
   address: "10.1.1.1"
@@ -17,7 +17,7 @@ routeros:
 
 #----- VPN Generator -----#
 vpncreator:
-  nginxfolder: "/www/web/vpn/" #Where the zipfile will be copied to be downloaded after
+  nginxfolder: "/app/output/" #Output folder for .zip DO NOT CHANGE IF LAUNCHED IN DOCKER
   caname: "dummyCA" #Name of the CA CASE SENSITIVE
   validtime: "365" #Validity Time
   keysize: "2048"
